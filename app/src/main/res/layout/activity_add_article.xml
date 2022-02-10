@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:orientation="vertical"
+  android:paddingLeft="15dp"
+  android:paddingRight="15dp"
+  android:paddingBottom="5dp"
+  android:paddingTop="5dp"
+  tools:ignore="MissingClass">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp">
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="Create New article"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:text="Categorie"/>
+    <TextView
+      android:id="@+id/designation"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:text="Alimentation"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp">
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="Article Info"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Libellé"
+      android:layout_weight="1"
+      />
+    <EditText
+      android:id="@+id/labeled"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="labeled"
+      android:inputType="text"
+      android:layout_weight="1"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Unit price"
+      android:layout_weight="1"
+      />
+
+    <EditText
+      android:id="@+id/unit_price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.28"
+      android:hint="Price"
+      android:inputType="number" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+   <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+
+     android:layout_marginTop="5dp"
+     android:layout_marginBottom="20dp">
+     <Button
+       android:id="@+id/add_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:text="add"
+       android:textColor="@color/white"
+       android:background="@color/purple_200"/>
+     <Button
+       android:id="@+id/cancel_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:text="cancel"
+       android:textColor="@color/white"
+       android:background="@color/purple_200"/>
+   </RelativeLayout>
+  </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

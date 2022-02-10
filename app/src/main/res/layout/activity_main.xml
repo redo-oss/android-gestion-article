@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+  android:orientation="vertical"
+  android:paddingLeft="15dp"
+  android:paddingRight="15dp"
+  android:paddingBottom="5dp"
+  android:paddingTop="5dp"
+  tools:ignore="MissingClass">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+          android:id="@+id/add"
+          android:text="add"
+          android:layout_weight="1"
+          android:layout_alignParentRight="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:background="@color/purple_200"/>
+      </RelativeLayout>
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <Spinner
+            android:id="@+id/is_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        </RelativeLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Designation"/>
+    <TextView
+      android:id="@+id/id_designation"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:padding="10sp"
+      android:textSize="14sp"
+      android:layout_weight="2"
+      android:gravity="center_horizontal"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+<TableLayout
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white">
+  <TableRow
+android:background="@color/purple_200"
+    >
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="ID"
+      android:textColor="@android:color/white"
+      android:padding="10sp"
+      android:textSize="14sp"
+      android:layout_weight="2"
+      android:gravity="center_horizontal"/>
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Libellé"
+      android:textColor="@android:color/white"
+      android:padding="10sp"
+      android:textSize="14sp"
+      android:layout_weight="2"
+      android:gravity="center_horizontal"/>
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="PU"
+      android:textColor="@android:color/white"
+      android:padding="10sp"
+      android:textSize="14sp"
+      android:layout_weight="2"
+      android:gravity="center_horizontal"/>
+     </TableRow>
+  <!-- Table Data -->
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+</TableLayout>
+  </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
